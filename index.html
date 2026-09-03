@@ -6,23 +6,23 @@
     <title>SUJAK/ — Group Expenses, Beautifully Settled</title>
     <meta
       name="description"
-      content="SUJAK/ is a luxury editorial group expense manager for trips, dinners, roommates and events."
+      content="SUJAK/ is a editorial group expense manager for trips, dinners, roommates and events."
     />
     <style>
-      @import url("https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap");
+       @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Doppio+One&family=Figtree:ital,wght@0,300..900;1,300..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Sekuya&family=Share+Tech&family=Smooch+Sans:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap');
       :root {
-        --paper: #f3efe7;
-        --paper2: #e9e2d6;
+        --paper: #f4f1ec;
+        --paper2: #e6e1d9;
         --ink: #181613;
         --muted: #3b3936;
-        --line: #bdb5a8;
-        --wine: #741d2a;
-        --gold: #a7864e;
+        --line: #f2efeb;
+        --wine: #a54200;
+        --gold: #73e1a3;
         --white: #fffdf8;
-        --green: #315d4b;
-        --serif: "Playfair Display", Georgia, serif;
-        --sans: Inter, Arial, sans-serif;
-        --mono: "DM Mono", monospace;
+        --green: #04301e;
+        --serif: "Doppio One", serif;
+        --sans: "Space Grotesk", Arial, sans-serif;
+        --mono: "Doppio One",scroll-behavior;
       }
       * {
         box-sizing: border-box;
@@ -125,23 +125,23 @@
         display: grid;
         place-items: center;
         font: 10px var(--mono);
+        
       }
  
       .hero {
         padding: 105px 0 190px;
         border-bottom: 1px solid var(--ink);
-        position: relative;   /* contains the ::before layer */
-        isolation: isolate;   /* keeps the overlay behind your text, not the page */
-        overflow: hidden;     /* nothing can spill past hero's own box */
+        position: relative;   
+        isolation: isolate;  
        }
       .hero::before {
         content: "";
         position: absolute;
-        inset: 0;              /* fills hero exactly, top/right/bottom/left: 0 */
+        inset: 0;              
         z-index: -6;
         background:
-         linear-gradient(180deg, rgba(243, 239, 231, 0.247) 0%, rgba(243,239,231,.88) 65%, var(--paper) 100%),
-         url("https://images.unsplash.com/photo-1610933987611-3e9dd10bf8ba?q=80&w=627&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") center 40% / cover no-repeat;
+         linear-gradient(180deg, rgba(243, 239, 231, 0.247) 0%, rgba(246, 242, 234, 0.64) 65%, var(--paper) 100%),
+         url("https://images.unsplash.com/photo-1527576539890-dfa815648363?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGJ1aWxkaW5nfGVufDB8fDB8fHww") center 40% / cover no-repeat;
       }
       
       .hero-grid {
@@ -184,6 +184,7 @@
       .section {
         padding: 110px 0;
         border-bottom: 1px solid var(--ink);
+
       }
       .section-heading {
         display: grid;
@@ -207,10 +208,12 @@
         display: grid;
         grid-template-columns: 2.3fr 1fr;
         gap: 28px;
+        border-radius: 40px; 
       }
       .card {
         background: var(--white);
         border: 1px solid var(--ink);
+        border-radius: 30px; 
       }
       .card-head {
         display: flex;
@@ -218,6 +221,7 @@
         justify-content: space-between;
         border-bottom: 1px solid var(--ink);
         padding: 17px 20px;
+         
       }
       .card-head button {
         border: 0;
@@ -225,6 +229,7 @@
         font: 9px var(--mono);
         text-transform: uppercase;
         color: var(--wine);
+        
       }
       .card-head button:hover {
         text-decoration: underline;
@@ -247,6 +252,7 @@
         font-size: 40px;
         font-weight: 500;
         line-height: 1;
+        border-radius: 30px;
       }
       .trip-total {
         text-align: right;
@@ -413,6 +419,7 @@
         color: white;
         padding: 28px;
         min-height: 100%;
+        border-radius: 40px;
       }
       .side-card h3 {
         font-family: var(--serif);
@@ -673,6 +680,7 @@
         background: var(--ink);
         color: white;
         padding: 55px;
+        border-radius: 50px;
       }
       .settle-grid {
         display: grid;
@@ -789,6 +797,7 @@
         border: 1px solid var(--ink);
         padding: 30px;
         background: var(--white);
+        border-radius: 40px;
       }
       .quote p {
         font-family: var(--serif);
@@ -802,6 +811,7 @@
  
       .cta {
         padding: 130px 0 120px;
+        border-radius: 40px;
       }
       .cta-grid {
         display: grid;
@@ -829,11 +839,13 @@
       footer {
         border-top: 1px solid var(--ink);
         padding: 25px 0;
+       
       }
       .footer {
         display: flex;
         justify-content: space-between;
         color: var(--muted);
+        
       }
  
       .modal-backdrop {
@@ -844,6 +856,7 @@
         place-items: center;
         z-index: 100;
         padding: 20px;
+        border-radius: 40px;
       }
       .modal-backdrop.open {
         display: grid;
@@ -869,6 +882,7 @@
         border: 0;
         background: none;
         font-size: 20px;
+        border-radius:30px;
       }
       .toast {
         position: fixed;
@@ -1076,7 +1090,7 @@
                 </div>
  
                 <div class="you-row">
-                   <label for="youSelect" style="margin: 0">You are</label>
+                   <label for="youSelect" style="margin: 0; border-radius:30px">You are</label>
                    <select id="youSelect"></select>
                 </div>
  
@@ -1103,7 +1117,7 @@
                 </div>
  
                 <div class="add-area">
-                  <div class="mono wine" style="margin-bottom: 18px">
+                  <div class="mono wine" style="margin-bottom: 18px; border-radius:30px">
                     ADD EXPENSE
                   </div>
                   <div class="form-grid">
@@ -1361,7 +1375,7 @@
           </select>
           <label>Add people (comma separated)</label
           ><input
-            placeholder="Sujak, panchot , tasawoyo ..."
+            placeholder="Sujak, Charlotte, Aayush..."
             id="newMembers"
             style="margin-bottom: 20px"
           />
